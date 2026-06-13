@@ -1,0 +1,302 @@
+{
+	"name": "someone",
+	"texture": "someone.png",
+	"texture_size": [ 64, 64 ],
+	"player_skin": true,
+	"parts": [
+		{
+			"name": "body",
+			"position": [ 0, 12, 0 ],
+			"bend": {
+				"offset": 4.5,
+				"size": 9,
+				"detail": 1,
+				"part": "upper",
+				"axis": [ "x", "y", "z" ]
+			},
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ -4, 0, -2 ],
+					"to": [ 4, 12, 2 ],
+					"uv": [ 4, 20 ]
+				}
+			],
+			"parts": [
+				{
+					"name": "head",
+					"position": [ 0, 12, 0 ],
+					"shapes": [
+						{
+							"type": "block",
+							"description": "base_cube",
+							"from": [ -4, 0, -4 ],
+							"to": [ 4, 8, 4 ],
+							"uv": [ 8, 8 ],
+							"bend": false
+						}
+					],
+					"parts": [
+						{
+							"name": "left_eye",
+							"position": [ 2.5, 3, 4 ],
+							"show_position": 1,
+							"bend": {
+								"offset": 0,
+								"size": 0.1,
+								"detail": 1,
+								"part": "upper",
+								"axis": "z"
+							},
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -0.5, 0, 0 ],
+									"to": [ 0.5, 2, 0 ],
+									"uv": [ 0, 0 ],
+									"position": [ 0, -1, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"hide_back": true,
+									"3d": true
+								}
+							]
+						},
+						{
+							"name": "right_eye",
+							"position": [ -2.5, 3, 4 ],
+							"show_position": 1,
+							"bend": {
+								"offset": 0,
+								"size": 0.1,
+								"detail": 1,
+								"part": "upper",
+								"axis": "z",
+								"invert": true
+							},
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -0.5, 0, 0 ],
+									"to": [ 0.5, 2, 0 ],
+									"uv": [ 0, 0 ],
+									"position": [ 0, -1, 0 ],
+									"scale": [ 1, 1, 0.1 ],
+									"hide_back": true,
+									"3d": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "right_arm",
+					"position": [ -5.5, 10, 0 ],
+					"show_position": 1,
+					"bend": {
+						"offset": -4,
+						"end_offset": 6,
+						"part": "lower",
+						"axis": "x",
+						"direction_min": 0,
+						"invert": true
+					},
+					"shapes": [
+						{
+							"type": "block",
+							"from": [ -1.5, -8, -2 ],
+							"to": [ 1.5, 2, 2 ],
+							"uv": [ 18, 36 ]
+						}
+					],
+					"parts": [
+						{
+							"name": "right_hand",
+							"position": [ 0, -8, 0 ],
+							"bend": {
+								"offset": -1,
+								"size": 2,
+								"detail": 1,
+								"part": "lower",
+								"axis": [ "x", "y", "z" ],
+								"invert": [ true, false, false ]
+							},
+							"shapes": [
+								{
+									"type": "block",
+									"from": [ -1.5, -2, -2 ],
+									"to": [ 1.5, 0, 2 ],
+									"uv": [ 32, 44 ],
+									"texture_mirror": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "left_arm",
+					"position": [ 5.5, 10, 0 ],
+					"show_position": 1,
+					"bend": {
+						"offset": -4,
+						"end_offset": 6,
+						"part": "lower",
+						"axis": "x",
+						"direction_min": 0,
+						"invert": true
+					},
+					"shapes": [
+						{
+							"type": "block",
+							"from": [ -1.5, -8, -2 ],
+							"to": [ 1.5, 2, 2 ],
+							"uv": [ 4, 36 ]
+						}
+					],
+					"parts": [
+						{
+							"name": "left_hand",
+							"position": [ 0, -8, 0 ],
+							"bend": {
+								"offset": -1,
+								"size": 2,
+								"detail": 1,
+								"part": "lower",
+								"axis": [ "x", "y", "z" ],
+								"invert": [ true, true, true ]
+							},
+							"shapes": [
+								{
+									"type": "block",
+									"from": [ -1.5, -2, -2 ],
+									"to": [ 1.5, 0, 2 ],
+									"uv": [ 32, 44 ]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "right_leg",
+			"depth": 1,
+			"position": [ -2, 11, 0 ],
+			"show_position": 1,
+			"bend": {
+				"offset": -5,
+				"end_offset": 6,
+				"part": "lower",
+				"axis": "x",
+				"direction_min": 0
+			},
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ -2, -9, -2 ],
+					"to": [ 2, 1, 2 ],
+					"uv": [ 20, 50 ]
+				}
+			],
+			"parts": [
+				{
+					"name": "right_ankle",
+					"position": [ 0, -9, 0 ],
+					"bend": {
+						"offset": -1,
+						"size": 2,
+						"detail": 1,
+						"part": "lower",
+						"axis": "x"
+					},
+					"shapes": [
+						{
+							"type": "block",
+							"from": [ -2, 0, -2 ],
+							"to": [ 2, 2, 2 ],
+							"uv": [ 36, 58 ],
+							"position": [ 0, -2, 0 ],
+							"texture_mirror": true
+						}
+					],
+					"parts": [
+						{
+							"name": "right_toes",
+							"depth": 1,
+							"position": [ 0, -1.5, 2 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -2, -0.5, -0.5 ],
+									"to": [ 2, 0.5, -0.5 ],
+									"uv": [ 32, 57 ],
+									"hide_back": true,
+									"3d": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "left_leg",
+			"depth": 1,
+			"position": [ 2, 11, 0 ],
+			"show_position": 1,
+			"bend": {
+				"offset": -5,
+				"end_offset": 6,
+				"part": "lower",
+				"axis": "x",
+				"direction_min": 0
+			},
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ -2, -9, -2 ],
+					"to": [ 2, 1, 2 ],
+					"uv": [ 4, 50 ]
+				}
+			],
+			"parts": [
+				{
+					"name": "left_ankle",
+					"position": [ 0, -9, 0 ],
+					"bend": {
+						"offset": -1,
+						"size": 2,
+						"detail": 1,
+						"part": "lower",
+						"axis": "x"
+					},
+					"shapes": [
+						{
+							"type": "block",
+							"from": [ -2, 0, -2 ],
+							"to": [ 2, 2, 2 ],
+							"uv": [ 36, 58 ],
+							"position": [ 0, -2, 0 ]
+						}
+					],
+					"parts": [
+						{
+							"name": "left_toes",
+							"depth": 1,
+							"position": [ 0, -1.5, 2 ],
+							"shapes": [
+								{
+									"type": "plane",
+									"from": [ -2, -0.5, -0.5 ],
+									"to": [ 2, 0.5, -0.5 ],
+									"uv": [ 32, 57 ],
+									"hide_back": true,
+									"3d": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
