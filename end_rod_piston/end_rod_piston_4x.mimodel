@@ -1,0 +1,78 @@
+{
+	"name": "piston",
+	"texture": "end_rod_piston_4x.png",
+	"texture_size": [ 64, 64 ],
+	"parts": [
+		{
+			"name": "base",
+			"position": [ -19, 0, 0 ],
+			"rotation": [ -90, -90, 0 ],
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ -3, 0, -3 ],
+					"to": [ 3, 19, 3 ],
+					"uv": [ 6, 6 ]
+				}
+			]
+		},
+		{
+			"name": "piston",
+			"position": [ -19, 0, 0 ],
+			"rotation": [ -90, -90, 0 ],
+			"show_position": 1,
+			"bend": {
+				"offset": 26.5,
+				"size": 15,
+				"detail": 1,
+				"part": "upper",
+				"axis": [ "x", "y", "z" ]
+			},
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ -2, 0, -2 ],
+					"to": [ 2, 19, 2 ],
+					"uv": [ 28, 4 ]
+				},
+				{
+					"type": "block",
+					"from": [ -2, 19, -2 ],
+					"to": [ 2, 34, 2 ],
+					"uv": [ 44, 4 ]
+				}
+			]
+		},
+		{
+			"name": "repeater_0",
+			"position": [ -4, 2, 0 ],
+			"rotation": [ -90, -90, 0 ],
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ 0, 0, 0 ],
+					"to": [ 2, 3, 2 ],
+					"uv": [ 58, 2 ],
+					"position": [ -1, 1, 1 ],
+					"rotation": [ 90, 0, 0 ]
+				}
+			]
+		},
+		{
+			"name": "repeater_1",
+			"position": [ -8, 3, 0 ],
+			"rotation": [ -90, -90, 0 ],
+			"show_position": 1,
+			"shapes": [
+				{
+					"type": "block",
+					"from": [ 0, 0, 0 ],
+					"to": [ 2, 3, 2 ],
+					"uv": [ 58, 2 ],
+					"position": [ -1, 1, 0 ],
+					"rotation": [ 90, 0, 0 ]
+				}
+			]
+		}
+	]
+}
