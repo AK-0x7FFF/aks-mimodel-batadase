@@ -25,8 +25,8 @@
 					"from": [ 7, 2, -2 ],
 					"to": [ 8, 5, 2 ],
 					"uv": [ 28, 26 ],
-					"vert6": [ -0.5, 0, 0 ],
-					"vert7": [ -0.5, 0, 0 ],
+					"vert6": [ -1, 0, 0 ],
+					"vert7": [ -1, 0, 0 ],
 					"scale": [ 0.5, 1, 1 ]
 				},
 				{
@@ -34,13 +34,13 @@
 					"from": [ -8, 2, -2 ],
 					"to": [ -7, 5, 2 ],
 					"uv": [ 28, 26 ],
-					"vert5": [ 0.5, 0, 0 ],
-					"vert8": [ 0.5, 0, 0 ],
+					"vert5": [ 1, 0, 0 ],
+					"vert8": [ 1, 0, 0 ],
 					"scale": [ 0.5, 1, 1 ]
 				},
 				{
 					"type": "block",
-					"from": [ -4, -1, -2 ],
+					"from": [ -4, 0, -2 ],
 					"to": [ 4, 2, 2 ],
 					"uv": [ 28, 20 ]
 				},
@@ -228,8 +228,8 @@
 									"parts": [
 										{
 											"name": "mid_bang",
-											"position": [ 0, 2.25, 4.3 ],
-											"rotation": [ -10, 0, 0 ],
+											"position": [ 0, 2.25, 4.41223 ],
+											"rotation": [ -9.24471, 0, 0 ],
 											"lock_bend": 0,
 											"bend": {
 												"offset": -1,
@@ -238,7 +238,7 @@
 												"inherit_bend": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"angle": [ 4.02437, 0, 0.77257 ]
+												"angle": [ 7.16999, 0, 0.77257 ]
 											},
 											"shapes": [
 												{
@@ -262,7 +262,8 @@
 										},
 										{
 											"name": "right_bang",
-											"position": [ -1.15, 2.2, 4.2 ],
+											"depth": 1,
+											"position": [ -1.38983, 2.2, 4.2 ],
 											"rotation": [ -10, 0, 5.5 ],
 											"lock_bend": 0,
 											"bend": {
@@ -278,7 +279,7 @@
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -3, -4, -0.5 ],
+													"from": [ -3, -3, -0.5 ],
 													"to": [ 0, 0, -0.5 ],
 													"uv": [ 35, 0 ],
 													"texture_mirror": true,
@@ -286,17 +287,42 @@
 												},
 												{
 													"type": "plane",
-													"from": [ 0, -2, -0.66667 ],
-													"to": [ 1, -1, -0.66667 ],
-													"uv": [ 34, 1 ],
+													"from": [ -3, -4.5, -0.5 ],
+													"to": [ -2, -3.5, -0.5 ],
+													"uv": [ 37, 3 ],
+													"texture_mirror": true,
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"color_alpha": 0.95,
+													"from": [ -2, -4, -0.5 ],
+													"to": [ -1, -3, -0.5 ],
+													"uv": [ 36, 3 ],
+													"texture_mirror": true,
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ 0, -2.5, -0.66667 ],
+													"to": [ 1, -1.5, -0.66667 ],
+													"uv": [ 34, 0 ],
 													"scale": [ 1, 1, 0.75 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ 0, -1.5, -0.5 ],
+													"to": [ 1, -0.5, -0.5 ],
+													"uv": [ 34, 0 ],
 													"3d": true
 												}
 											]
 										},
 										{
 											"name": "left_bang",
-											"position": [ 1.15, 2.2, 4.2 ],
+											"depth": 2,
+											"position": [ 1.38983, 2.2, 4.2 ],
 											"rotation": [ -10, 0, -5.5 ],
 											"lock_bend": 0,
 											"bend": {
@@ -311,17 +337,39 @@
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ 0, -4, -0.5 ],
+													"from": [ 0, -3, -0.5 ],
 													"to": [ 3, 0, -0.5 ],
 													"uv": [ 35, 0 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -2, -0.66667 ],
-													"to": [ 0, -1, -0.66667 ],
-													"uv": [ 34, 1 ],
+													"from": [ 2, -4.5, -0.5 ],
+													"to": [ 3, -3.5, -0.5 ],
+													"uv": [ 37, 3 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"color_alpha": 0.95,
+													"from": [ 1, -4, -0.5 ],
+													"to": [ 2, -3, -0.5 ],
+													"uv": [ 36, 3 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -1, -2.5, -0.66667 ],
+													"to": [ 0, -1.5, -0.66667 ],
+													"uv": [ 34, 0 ],
 													"scale": [ 1, 1, 0.75 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -1, -1.5, -0.5 ],
+													"to": [ 0, -0.5, -0.5 ],
+													"uv": [ 34, 0 ],
 													"3d": true
 												}
 											]
@@ -423,6 +471,27 @@
 													]
 												}
 											]
+										},
+										{
+											"name": "ahode",
+											"position": [ 0, 4, 0.5 ],
+											"rotation": [ -37.46332, -26.57653, 26.43766 ],
+											"shapes": [
+												{
+													"type": "plane",
+													"from": [ 0, 0, 0 ],
+													"to": [ 2, 2, 0 ],
+													"uv": [ 31, 6 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ 2, 0.5, 0 ],
+													"to": [ 3, 1.5, 0 ],
+													"uv": [ 33, 7 ],
+													"3d": true
+												}
+											]
 										}
 									]
 								},
@@ -432,8 +501,8 @@
 									"parts": [
 										{
 											"name": "left_hair_0",
-											"position": [ 4.2, 2.5, 3 ],
-											"rotation": [ -2, 90, 0 ],
+											"position": [ 4, 2.5, 3 ],
+											"rotation": [ -4.39036, 90, 0 ],
 											"bend": {
 												"offset": -5,
 												"size": 10,
@@ -455,29 +524,29 @@
 										},
 										{
 											"name": "left_hair_1",
-											"position": [ 4.1, 1.5, 1.5 ],
+											"position": [ 4.1, 0.5, 1.5 ],
 											"rotation": [ 0, 90, 0 ],
 											"bend": {
-												"offset": -2,
-												"size": 4,
+												"offset": -2.5,
+												"size": 5,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
 												"invert": [ false, true, false ],
-												"angle": [ -8.57143, 15.42857, -8.57143 ]
+												"angle": [ 8.65223, 15.42857, -8.57143 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, -1 ],
+													"from": [ -0.5, -4, -1 ],
 													"to": [ 0.5, 0, -1 ],
-													"uv": [ 34, 11 ],
+													"uv": [ 34, 12 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, 0 ],
-													"to": [ 0.5, -3, 0 ],
+													"from": [ -0.5, -4, 0 ],
+													"to": [ 0.5, -2, 0 ],
 													"uv": [ 34, 14 ],
 													"scale": [ 1, 1, 0.25 ],
 													"hide_back": true,
@@ -487,36 +556,36 @@
 										},
 										{
 											"name": "left_hair_2",
-											"position": [ 4.3, 2, 0 ],
+											"position": [ 4.3, 1, 0 ],
 											"rotation": [ -3.48445, 90, 0 ],
 											"bend": {
-												"offset": -4,
-												"size": 8,
+												"offset": -3.5,
+												"size": 7,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
 												"invert": [ false, true, false ],
-												"angle": [ 20.47466, 0, 2.80638 ]
+												"angle": [ 16.02469, 0, 2.80638 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -1, -5, -1 ],
+													"from": [ -1, -4, -1 ],
 													"to": [ 1, 0, -1 ],
-													"uv": [ 32, 10 ],
+													"uv": [ 32, 11 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ 0, -6, -1 ],
-													"to": [ 1, -5, -1 ],
+													"from": [ 0, -5, -1 ],
+													"to": [ 1, -4, -1 ],
 													"uv": [ 33, 15 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ 0, -5.5, -0.5 ],
-													"to": [ 1, -2.5, -0.5 ],
+													"from": [ 0, -4.5, -0.5 ],
+													"to": [ 1, -1.5, -0.5 ],
 													"uv": [ 33, 13 ],
 													"scale": [ 1, 1, 0.4 ],
 													"hide_back": true,
@@ -535,14 +604,14 @@
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
 												"invert": [ false, true, false ],
-												"angle": [ -5.14286, -15.42857, 6.85714 ]
+												"angle": [ 11.86495, -15.42857, 6.85714 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
 													"from": [ -0.5, -5, -1 ],
-													"to": [ 0.5, 0, -1 ],
-													"uv": [ 34, 11 ],
+													"to": [ 0.5, -1, -1 ],
+													"uv": [ 34, 12 ],
 													"3d": true
 												},
 												{
@@ -558,29 +627,29 @@
 										},
 										{
 											"name": "left_hair_4",
-											"position": [ 4.3, 1, -2.5 ],
+											"position": [ 4.3, 0, -2.5 ],
 											"rotation": [ -3.09482, 90, 0 ],
 											"bend": {
-												"offset": -4,
-												"size": 8,
+												"offset": -2.5,
+												"size": 5,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
 												"invert": [ false, true, false ],
-												"angle": [ 26.02499, -17.14286, 6.85714 ]
+												"angle": [ 17.10662, -17.14286, 6.85714 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, -1 ],
+													"from": [ -0.5, -4, -1 ],
 													"to": [ 0.5, 0, -1 ],
-													"uv": [ 33, 11 ],
+													"uv": [ 33, 12 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, 0 ],
-													"to": [ 0.5, -2, 0 ],
+													"from": [ -0.5, -4, 0 ],
+													"to": [ 0.5, -1, 0 ],
 													"uv": [ 33, 13 ],
 													"scale": [ 1, 1, 0.2 ],
 													"hide_back": true,
@@ -593,20 +662,19 @@
 								{
 									"name": "right_hair",
 									"position": [ 0, 0, 0 ],
-									"rotation": [ 0, 180, 0 ],
 									"parts": [
 										{
 											"name": "right_hair_0",
-											"position": [ 4.2, 2.5, -3 ],
-											"rotation": [ -2, 90, 0 ],
+											"position": [ -4, 2.5, 3 ],
+											"rotation": [ -4.39036, -90, 0 ],
 											"bend": {
 												"offset": -5,
 												"size": 10,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"invert": [ false, true, false ],
-												"angle": [ 15, 25.71429, -15 ]
+												"invert": [ false, false, true ],
+												"angle": [ 15, -25.71429, 15 ]
 											},
 											"shapes": [
 												{
@@ -621,31 +689,33 @@
 										},
 										{
 											"name": "right_hair_1",
-											"position": [ 4.1, 1.5, -1.5 ],
-											"rotation": [ 0, 90, 0 ],
+											"position": [ -4.1, 0.5, 1.5 ],
+											"rotation": [ 0, -90, 0 ],
 											"bend": {
-												"offset": -2,
-												"size": 4,
+												"offset": -2.5,
+												"size": 5,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"invert": [ false, true, false ],
-												"angle": [ -8.57143, -15.42857, 8.57143 ]
+												"invert": [ false, false, true ],
+												"angle": [ 8.65223, 15.42857, -8.57143 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, -1 ],
+													"from": [ -0.5, -4, -1 ],
 													"to": [ 0.5, 0, -1 ],
-													"uv": [ 34, 11 ],
+													"uv": [ 34, 12 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, 0 ],
-													"to": [ 0.5, -3, 0 ],
+													"from": [ -0.5, -4, 0 ],
+													"to": [ 0.5, -2, 0 ],
 													"uv": [ 34, 14 ],
 													"scale": [ 1, 1, 0.25 ],
+													"texture_mirror": true,
 													"hide_back": true,
 													"3d": true
 												}
@@ -653,61 +723,66 @@
 										},
 										{
 											"name": "right_hair_2",
-											"position": [ 4.3, 2, 0 ],
-											"rotation": [ -3.48445, 90, 0 ],
+											"position": [ -4.3, 1, 0 ],
+											"rotation": [ -3.48445, -90, 0 ],
 											"bend": {
-												"offset": -4,
-												"size": 8,
+												"offset": -3.5,
+												"size": 7,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"invert": [ false, true, false ],
-												"angle": [ 20.47466, 0, -2.80638 ]
+												"invert": [ false, false, true ],
+												"angle": [ 16.02469, 0, 2.80638 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -1, -5, -1 ],
+													"from": [ -1, -4, -1 ],
 													"to": [ 1, 0, -1 ],
-													"uv": [ 32, 10 ],
+													"uv": [ 32, 11 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 0, -5, -1 ],
+													"from": [ -1, -5, -1 ],
+													"to": [ 0, -4, -1 ],
 													"uv": [ 33, 15 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -5.5, -0.5 ],
-													"to": [ 0, -2.5, -0.5 ],
-													"uv": [ 33, 12 ],
+													"from": [ -1, -4.5, -0.5 ],
+													"to": [ 0, -1.5, -0.5 ],
+													"uv": [ 33, 13 ],
 													"scale": [ 1, 1, 0.4 ],
+													"texture_mirror": true,
+													"hide_back": true,
 													"3d": true
 												}
 											]
 										},
 										{
 											"name": "right_hair_3",
-											"position": [ 4.2, 0.5, 1.5 ],
-											"rotation": [ -2.57705, 90, 0 ],
+											"position": [ -4.2, 0.5, -1.5 ],
+											"rotation": [ -2.57705, -90, 0 ],
 											"bend": {
 												"offset": -3,
 												"size": 6,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"invert": [ false, true, false ],
-												"angle": [ -5.14286, 15.42857, -6.85714 ]
+												"invert": [ false, false, true ],
+												"angle": [ 11.86495, -15.42857, 6.85714 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
 													"from": [ -0.5, -5, -1 ],
-													"to": [ 0.5, 0, -1 ],
-													"uv": [ 34, 11 ],
+													"to": [ 0.5, -1, -1 ],
+													"uv": [ 34, 12 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
@@ -716,6 +791,7 @@
 													"to": [ 0.5, -3, 0 ],
 													"uv": [ 34, 14 ],
 													"scale": [ 1, 1, 0.25 ],
+													"texture_mirror": true,
 													"hide_back": true,
 													"3d": true
 												}
@@ -723,31 +799,33 @@
 										},
 										{
 											"name": "right_hair_4",
-											"position": [ 4.3, 1, 2.5 ],
-											"rotation": [ -3.09482, 90, 0 ],
+											"position": [ -4.3, 0, -2.5 ],
+											"rotation": [ -3.09482, -90, 0 ],
 											"bend": {
-												"offset": -4,
-												"size": 8,
+												"offset": -2.5,
+												"size": 5,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"invert": [ false, true, false ],
-												"angle": [ 26.02499, 17.14286, -6.85714 ]
+												"invert": [ false, false, true ],
+												"angle": [ 17.10662, -17.14286, 6.85714 ]
 											},
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, -1 ],
+													"from": [ -0.5, -4, -1 ],
 													"to": [ 0.5, 0, -1 ],
-													"uv": [ 33, 11 ],
+													"uv": [ 33, 12 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -0.5, -5, 0 ],
-													"to": [ 0.5, -2, 0 ],
-													"uv": [ 32, 13 ],
+													"from": [ -0.5, -4, 0 ],
+													"to": [ 0.5, -1, 0 ],
+													"uv": [ 33, 13 ],
 													"scale": [ 1, 1, 0.2 ],
+													"texture_mirror": true,
 													"hide_back": true,
 													"3d": true
 												}
@@ -769,7 +847,7 @@
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"angle": [ 8.41492, -19.43848, -1.47476 ]
+												"angle": [ 8.41492, -19.43848, -10.33508 ]
 											},
 											"shapes": [
 												{
@@ -799,7 +877,7 @@
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ],
-												"angle": [ 8.41492, 19.43848, 1.47476 ]
+												"angle": [ 8.41492, 19.43848, 11.45233 ]
 											},
 											"shapes": [
 												{
@@ -822,7 +900,7 @@
 										},
 										{
 											"name": "back_hair_0",
-											"position": [ 1.5, 0.5, -4.2 ],
+											"position": [ 1.5, 0.5, -4.33207 ],
 											"rotation": [ -3.2108, 180, 0 ],
 											"bend": {
 												"offset": -3,
@@ -853,7 +931,7 @@
 										},
 										{
 											"name": "back_hair_1",
-											"position": [ 0, 3, -4.2 ],
+											"position": [ 0, 3, -4.36947 ],
 											"rotation": [ -2.16673, 180, 0 ],
 											"bend": {
 												"offset": -5,
@@ -885,7 +963,7 @@
 										},
 										{
 											"name": "back_hair_2",
-											"position": [ -1.5, 0.5, -4.2 ],
+											"position": [ -1.5, 0.5, -4.33207 ],
 											"rotation": [ -3.2108, 180, 0 ],
 											"bend": {
 												"offset": -3,
@@ -921,13 +999,13 @@
 									"position": [ 0, -4, 0 ],
 									"parts": [
 										{
-											"name": "right_droop_hair",
-											"position": [ -3, 0, 3 ],
+											"name": "left_droop_hair",
+											"position": [ 3, -0.5, 2.5 ],
 											"show_position": 1,
 											"bend": {
-												"offset": -3.5,
-												"end_offset": 6,
-												"size": 5,
+												"offset": -0.5,
+												"end_offset": 1,
+												"size": 2,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ]
@@ -935,81 +1013,380 @@
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 2, 0, -1 ],
-													"uv": [ 48, 0 ],
+													"from": [ -1, -1.5, -0.5 ],
+													"to": [ 1, 0.5, -0.5 ],
+													"uv": [ 64, 0 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 1, 0, -1 ],
-													"uv": [ 51, 0 ],
-													"rotation": [ 0, 26.5, 0 ],
-													"scale": [ 1, 1, 0.5 ],
+													"from": [ -1.28782, -1.5, -0.13664 ],
+													"to": [ 0.71218, 0.5, -0.13664 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 30, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
+													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 1, 0, -1 ],
-													"uv": [ 51, 0 ],
-													"rotation": [ 0, -26.5, 0 ],
-													"scale": [ 1, 1, 0.5 ],
+													"from": [ -1.28782, -1.5, -0.13664 ],
+													"to": [ 0.71218, 0.5, -0.13664 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 210, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -0.70979, -1.5, -0.13784 ],
+													"to": [ 1.29021, 0.5, -0.13784 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, -30, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
+													"texture_mirror": true,
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -0.70979, -1.5, -0.13784 ],
+													"to": [ 1.29021, 0.5, -0.13784 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 150, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
 													"3d": true
 												}
 											],
 											"parts": [
 												{
-													"name": "right_droop_hair:lower",
-													"position": [ 0, -6, 0 ],
+													"name": "left_droop_hair_1",
+													"position": [ 0, -1.5, 0 ],
 													"show_position": 1,
 													"bend": {
-														"offset": -2.5,
-														"end_offset": 6,
-														"size": 5,
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
 														"detail": 1,
+														"inherit_bend": 1,
 														"part": "lower",
 														"axis": [ "x", "y", "z" ]
 													},
 													"shapes": [
 														{
 															"type": "plane",
-															"from": [ -1, -6, -1 ],
-															"to": [ 2, 0, -1 ],
-															"uv": [ 48, 6 ],
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 64, 2 ],
+															"texture_mirror": true,
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -6, -1 ],
-															"to": [ 1, 0, -1 ],
-															"uv": [ 51, 6 ],
-															"rotation": [ 0, 26.5, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"from": [ -1.28782, -2, -0.13664 ],
+															"to": [ 0.71218, 0, -0.13664 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -6, -1 ],
-															"to": [ 1, 0, -1 ],
-															"uv": [ 51, 6 ],
-															"rotation": [ 0, -26.5, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"from": [ -1.28782, -2, -0.13664 ],
+															"to": [ 0.71218, 0, -0.13664 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.70979, -2, -0.13784 ],
+															"to": [ 1.29021, 0, -0.13784 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, -30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.70979, -2, -0.13784 ],
+															"to": [ 1.29021, 0, -0.13784 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "left_droop_hair_2",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 64, 4 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.28782, -2, -0.13664 ],
+																	"to": [ 0.71218, 0, -0.13664 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.28782, -2, -0.13664 ],
+																	"to": [ 0.71218, 0, -0.13664 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.70979, -2, -0.13784 ],
+																	"to": [ 1.29021, 0, -0.13784 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.70979, -2, -0.13784 ],
+																	"to": [ 1.29021, 0, -0.13784 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "left_droop_hair_3",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 64, 6 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.28782, -2, -0.13664 ],
+																			"to": [ 0.71218, 0, -0.13664 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.28782, -2, -0.13664 ],
+																			"to": [ 0.71218, 0, -0.13664 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.70979, -2, -0.13784 ],
+																			"to": [ 1.29021, 0, -0.13784 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.70979, -2, -0.13784 ],
+																			"to": [ 1.29021, 0, -0.13784 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "left_droop_hair_4",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 64, 8 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.28782, -2, -0.13664 ],
+																					"to": [ 0.71218, 0, -0.13664 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.28782, -2, -0.13664 ],
+																					"to": [ 0.71218, 0, -0.13664 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.70979, -2, -0.13784 ],
+																					"to": [ 1.29021, 0, -0.13784 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.70979, -2, -0.13784 ],
+																					"to": [ 1.29021, 0, -0.13784 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "left_droop_hair_5",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 64, 10 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.28782, -2, -0.13664 ],
+																							"to": [ 0.71218, 0, -0.13664 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.28782, -2, -0.13664 ],
+																							"to": [ 0.71218, 0, -0.13664 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.70979, -2, -0.13784 ],
+																							"to": [ 1.29021, 0, -0.13784 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.70979, -2, -0.13784 ],
+																							"to": [ 1.29021, 0, -0.13784 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
 											]
 										},
 										{
-											"name": "left_droop_hair",
-											"position": [ 3, 0, 3 ],
+											"name": "right_droop_hair",
+											"position": [ -3, -0.5, 2.5 ],
 											"show_position": 1,
 											"bend": {
-												"offset": -3.5,
-												"end_offset": 6,
-												"size": 5,
+												"offset": -0.5,
+												"end_offset": 1,
+												"size": 2,
 												"detail": 1,
 												"part": "lower",
 												"axis": [ "x", "y", "z" ]
@@ -1017,74 +1394,361 @@
 											"shapes": [
 												{
 													"type": "plane",
-													"from": [ -2, -6, -1 ],
-													"to": [ 1, 0, -1 ],
-													"uv": [ 48, 0 ],
+													"from": [ -1, -1.5, -0.5 ],
+													"to": [ 1, 0.5, -0.5 ],
+													"uv": [ 64, 0 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -1.28782, -1.5, -0.13664 ],
+													"to": [ 0.71218, 0.5, -0.13664 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 30, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
+													"3d": true
+												},
+												{
+													"type": "plane",
+													"from": [ -1.28782, -1.5, -0.13664 ],
+													"to": [ 0.71218, 0.5, -0.13664 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 210, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
 													"texture_mirror": true,
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 1, 0, -1 ],
-													"uv": [ 51, 0 ],
-													"rotation": [ 0, 26.5, 0 ],
-													"scale": [ 1, 1, 0.5 ],
-													"texture_mirror": true,
+													"from": [ -0.70979, -1.5, -0.13784 ],
+													"to": [ 1.29021, 0.5, -0.13784 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, -30, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
 													"3d": true
 												},
 												{
 													"type": "plane",
-													"from": [ -1, -6, -1 ],
-													"to": [ 1, 0, -1 ],
-													"uv": [ 51, 0 ],
-													"rotation": [ 0, -26.5, 0 ],
-													"scale": [ 1, 1, 0.5 ],
+													"from": [ -0.70979, -1.5, -0.13784 ],
+													"to": [ 1.29021, 0.5, -0.13784 ],
+													"uv": [ 66, 0 ],
+													"rotation": [ 0, 150, 0 ],
+													"scale": [ 0.86667, 1, 0.5 ],
 													"texture_mirror": true,
 													"3d": true
 												}
 											],
 											"parts": [
 												{
-													"name": "left_droop_hair:lower",
-													"position": [ 0, -6, 0 ],
+													"name": "right_droop_hair_1",
+													"position": [ 0, -1.5, 0 ],
 													"show_position": 1,
 													"bend": {
-														"offset": -2.5,
-														"end_offset": 6,
-														"size": 5,
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
 														"detail": 1,
+														"inherit_bend": 1,
 														"part": "lower",
 														"axis": [ "x", "y", "z" ]
 													},
 													"shapes": [
 														{
 															"type": "plane",
-															"from": [ -2, -6, -1 ],
-															"to": [ 1, 0, -1 ],
-															"uv": [ 48, 6 ],
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 64, 2 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.28782, -2, -0.13664 ],
+															"to": [ 0.71218, 0, -0.13664 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.28782, -2, -0.13664 ],
+															"to": [ 0.71218, 0, -0.13664 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"texture_mirror": true,
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -6, -1 ],
-															"to": [ 1, 0, -1 ],
-															"uv": [ 51, 6 ],
-															"rotation": [ 0, 26.5, 0 ],
-															"scale": [ 1, 1, 0.5 ],
-															"texture_mirror": true,
+															"from": [ -0.70979, -2, -0.13784 ],
+															"to": [ 1.29021, 0, -0.13784 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, -30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -6, -1 ],
-															"to": [ 1, 0, -1 ],
-															"uv": [ 51, 6 ],
-															"rotation": [ 0, -26.5, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"from": [ -0.70979, -2, -0.13784 ],
+															"to": [ 1.29021, 0, -0.13784 ],
+															"uv": [ 66, 2 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"texture_mirror": true,
 															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "right_droop_hair_2",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 64, 4 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.28782, -2, -0.13664 ],
+																	"to": [ 0.71218, 0, -0.13664 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.28782, -2, -0.13664 ],
+																	"to": [ 0.71218, 0, -0.13664 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.70979, -2, -0.13784 ],
+																	"to": [ 1.29021, 0, -0.13784 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.70979, -2, -0.13784 ],
+																	"to": [ 1.29021, 0, -0.13784 ],
+																	"uv": [ 66, 4 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "right_droop_hair_3",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 64, 6 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.28782, -2, -0.13664 ],
+																			"to": [ 0.71218, 0, -0.13664 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.28782, -2, -0.13664 ],
+																			"to": [ 0.71218, 0, -0.13664 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.70979, -2, -0.13784 ],
+																			"to": [ 1.29021, 0, -0.13784 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.70979, -2, -0.13784 ],
+																			"to": [ 1.29021, 0, -0.13784 ],
+																			"uv": [ 66, 6 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "right_droop_hair_4",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 64, 8 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.28782, -2, -0.13664 ],
+																					"to": [ 0.71218, 0, -0.13664 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.28782, -2, -0.13664 ],
+																					"to": [ 0.71218, 0, -0.13664 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.70979, -2, -0.13784 ],
+																					"to": [ 1.29021, 0, -0.13784 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.70979, -2, -0.13784 ],
+																					"to": [ 1.29021, 0, -0.13784 ],
+																					"uv": [ 66, 8 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "right_droop_hair_5",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 64, 10 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.28782, -2, -0.13664 ],
+																							"to": [ 0.71218, 0, -0.13664 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.28782, -2, -0.13664 ],
+																							"to": [ 0.71218, 0, -0.13664 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.70979, -2, -0.13784 ],
+																							"to": [ 1.29021, 0, -0.13784 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.70979, -2, -0.13784 ],
+																							"to": [ 1.29021, 0, -0.13784 ],
+																							"uv": [ 66, 10 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
@@ -1092,88 +1756,84 @@
 										},
 										{
 											"name": "back_droop_hair",
-											"position": [ 0, 0, -3 ],
+											"position": [ 0, 0, -2.5 ],
 											"show_position": 1,
 											"bend": {
-												"offset": -6,
-												"end_offset": 6,
-												"size": 12,
-												"detail": 1,
-												"part": "lower",
+												"offset": 0,
+												"part": "right",
 												"axis": [ "x", "y", "z" ]
 											},
 											"parts": [
 												{
-													"name": "back_droop_hair_0",
+													"name": "back_droop_hair_0_0",
 													"position": [ -3, 0, 0 ],
+													"lock_bend": 0,
 													"show_position": 1,
 													"bend": {
-														"offset": -6,
-														"end_offset": 6,
-														"size": 12,
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
 														"detail": 1,
+														"inherit_bend": 1,
 														"part": "lower",
 														"axis": [ "x", "y", "z" ]
 													},
 													"shapes": [
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 53, 0 ],
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 48, 0 ],
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 61, 0 ],
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 56, 0 ],
 															"rotation": [ 0, -30, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 61, 0 ],
-															"rotation": [ 0, 30, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
 															"3d": true
-														}
-													]
-												},
-												{
-													"name": "back_droop_hair_1",
-													"position": [ 0, 0, 0 ],
-													"show_position": 1,
-													"bend": {
-														"offset": -6,
-														"end_offset": 6,
-														"size": 12,
-														"detail": 1,
-														"part": "lower",
-														"axis": [ "x", "y", "z" ]
-													},
-													"shapes": [
+														},
 														{
 															"type": "plane",
-															"from": [ -2, -12, 0 ],
-															"to": [ 2, 0, 0 ],
-															"uv": [ 55, 0 ],
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
 															"3d": true
 														}
 													],
 													"parts": [
 														{
-															"name": "back_droop_hair_3",
-															"position": [ -1, 0, 0 ],
-															"lock_bend": 0,
+															"name": "back_droop_hair_0_1",
+															"position": [ 0, -2, 0 ],
 															"show_position": 1,
 															"bend": {
-																"offset": -7,
-																"end_offset": 6,
-																"size": 14,
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
 																"detail": 1,
 																"inherit_bend": 1,
 																"part": "lower",
@@ -1182,80 +1842,2229 @@
 															"shapes": [
 																{
 																	"type": "plane",
-																	"from": [ -1, -12, -0.35 ],
-																	"to": [ 1, 0, -0.35 ],
-																	"uv": [ 63, 0 ],
-																	"rotation": [ 0, -10, 0 ],
-																	"scale": [ 1, 1, 0.5 ],
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 48, 2 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
 																	"3d": true
 																}
-															]
-														},
-														{
-															"name": "back_droop_hair_4",
-															"position": [ 1, 0, 0 ],
-															"lock_bend": 0,
-															"show_position": 1,
-															"bend": {
-																"offset": -7,
-																"end_offset": 6,
-																"size": 14,
-																"detail": 1,
-																"inherit_bend": 1,
-																"part": "lower",
-																"axis": [ "x", "y", "z" ]
-															},
-															"shapes": [
+															],
+															"parts": [
 																{
-																	"type": "plane",
-																	"from": [ -1, -12, -0.35 ],
-																	"to": [ 1, 0, -0.35 ],
-																	"uv": [ 65, 0 ],
-																	"rotation": [ 0, 10, 0 ],
-																	"scale": [ 1, 1, 0.5 ],
-																	"3d": true
+																	"name": "back_droop_hair_0_2",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 48, 4 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_0_3",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 48, 6 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_0_4",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 48, 8 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_0_5",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 48, 10 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, -30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
 																}
 															]
 														}
 													]
 												},
 												{
-													"name": "back_droop_hair_2",
-													"position": [ 3, 0, 0 ],
+													"name": "back_droop_hair_1_0",
+													"position": [ -1, 0, -0.5 ],
+													"lock_bend": 0,
 													"show_position": 1,
 													"bend": {
-														"offset": -6,
-														"end_offset": 6,
-														"size": 12,
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
 														"detail": 1,
+														"inherit_bend": 1,
 														"part": "lower",
 														"axis": [ "x", "y", "z" ]
 													},
 													"shapes": [
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 59, 0 ],
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 50, 0 ],
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 67, 0 ],
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 58, 0 ],
 															"rotation": [ 0, -30, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"scale": [ 0.86667, 1, 0.5 ],
 															"3d": true
 														},
 														{
 															"type": "plane",
-															"from": [ -1, -12, 0 ],
-															"to": [ 1, 0, 0 ],
-															"uv": [ 67, 0 ],
-															"rotation": [ 0, 30, 0 ],
-															"scale": [ 1, 1, 0.5 ],
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 58, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
 															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 58, 0 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 58, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "back_droop_hair_1_1",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 50, 2 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 58, 2 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 58, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 58, 2 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 58, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "back_droop_hair_1_2",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 50, 4 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 58, 4 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 58, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 58, 4 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 58, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_1_3",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 50, 6 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 58, 6 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 58, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 58, 6 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 58, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_1_4",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 50, 8 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 58, 8 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 58, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 58, 8 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 58, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_1_5",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 50, 10 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 58, 10 ],
+																									"rotation": [ 0, -30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 58, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 58, 10 ],
+																									"rotation": [ 0, 30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 58, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "back_droop_hair_2_0",
+													"position": [ 1, 0, -0.5 ],
+													"lock_bend": 0,
+													"show_position": 1,
+													"bend": {
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
+														"detail": 1,
+														"inherit_bend": 1,
+														"part": "lower",
+														"axis": [ "x", "y", "z" ],
+														"invert": [ false, true, true ]
+													},
+													"shapes": [
+														{
+															"type": "plane",
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 52, 0 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 60, 0 ],
+															"rotation": [ 0, -30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 60, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 60, 0 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 60, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "back_droop_hair_1_1 (2)",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ],
+																"invert": [ false, true, true ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 52, 2 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 60, 2 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 60, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 60, 2 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 60, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "back_droop_hair_1_2 (2)",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ],
+																		"invert": [ false, true, true ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 52, 4 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 60, 4 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 60, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 60, 4 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 60, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_1_3 (2)",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ],
+																				"invert": [ false, true, true ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 52, 6 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 60, 6 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 60, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 60, 6 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 60, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_1_4 (2)",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ],
+																						"invert": [ false, true, true ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 52, 8 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 60, 8 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 60, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 60, 8 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 60, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_1_5 (2)",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ],
+																								"invert": [ false, true, true ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 52, 10 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 60, 10 ],
+																									"rotation": [ 0, -30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 60, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 60, 10 ],
+																									"rotation": [ 0, 30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 60, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "back_droop_hair_3_0",
+													"position": [ 3, 0, 0 ],
+													"lock_bend": 0,
+													"show_position": 1,
+													"bend": {
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
+														"detail": 1,
+														"inherit_bend": 1,
+														"part": "lower",
+														"axis": [ "x", "y", "z" ],
+														"invert": [ false, true, true ]
+													},
+													"shapes": [
+														{
+															"type": "plane",
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 54, 0 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, -30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "back_droop_hair_1_1 (3)",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ],
+																"invert": [ false, true, true ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 54, 2 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "back_droop_hair_1_2 (3)",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ],
+																		"invert": [ false, true, true ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 54, 4 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_1_3 (3)",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ],
+																				"invert": [ false, true, true ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 54, 6 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_1_4 (3)",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ],
+																						"invert": [ false, true, true ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 54, 8 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_1_5 (3)",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ],
+																								"invert": [ false, true, true ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 54, 10 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, -30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "back_droop_hair_4_0 ",
+													"position": [ 1.5, 0.5, 0.25 ],
+													"lock_bend": 0,
+													"show_position": 1,
+													"bend": {
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
+														"detail": 1,
+														"inherit_bend": 1,
+														"part": "lower",
+														"axis": [ "x", "y", "z" ],
+														"invert": [ false, true, true ]
+													},
+													"shapes": [
+														{
+															"type": "plane",
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 54, 0 ],
+															"rotation": [ 0, 180, 0 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 330, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 62, 0 ],
+															"rotation": [ 0, 390, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "back_droop_hair_1_1 (4)",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ],
+																"invert": [ false, true, true ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 54, 2 ],
+																	"rotation": [ 0, 180, 0 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 330, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 62, 2 ],
+																	"rotation": [ 0, 390, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "back_droop_hair_1_2 (4)",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ],
+																		"invert": [ false, true, true ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 54, 4 ],
+																			"rotation": [ 0, 180, 0 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 330, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 62, 4 ],
+																			"rotation": [ 0, 390, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_1_3 (4)",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ],
+																				"invert": [ false, true, true ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 54, 6 ],
+																					"rotation": [ 0, 180, 0 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 330, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 62, 6 ],
+																					"rotation": [ 0, 390, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_1_4 (4)",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ],
+																						"invert": [ false, true, true ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 54, 8 ],
+																							"rotation": [ 0, 180, 0 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 330, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 62, 8 ],
+																							"rotation": [ 0, 390, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_1_5 (4)",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ],
+																								"invert": [ false, true, true ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 54, 10 ],
+																									"rotation": [ 0, 180, 0 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 330, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 62, 10 ],
+																									"rotation": [ 0, 390, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "back_droop_hair_5_0",
+													"position": [ -1.5, 0.5, 0.25 ],
+													"lock_bend": 0,
+													"show_position": 1,
+													"bend": {
+														"offset": -1,
+														"end_offset": 1,
+														"size": 2,
+														"detail": 1,
+														"inherit_bend": 1,
+														"part": "lower",
+														"axis": [ "x", "y", "z" ]
+													},
+													"shapes": [
+														{
+															"type": "plane",
+															"from": [ -1, -2, -0.5 ],
+															"to": [ 1, 0, -0.5 ],
+															"uv": [ 48, 0 ],
+															"rotation": [ 0, 180, 0 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 150, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -1.2879, -2, -0.86713 ],
+															"to": [ 0.7121, 0, -0.86713 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, -30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 210, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"texture_mirror": true,
+															"3d": true
+														},
+														{
+															"type": "plane",
+															"from": [ -0.71186, -2, -0.86721 ],
+															"to": [ 1.28814, 0, -0.86721 ],
+															"uv": [ 56, 0 ],
+															"rotation": [ 0, 30, 0 ],
+															"scale": [ 0.86667, 1, 0.5 ],
+															"3d": true
+														}
+													],
+													"parts": [
+														{
+															"name": "back_droop_hair_0_1 (2)",
+															"position": [ 0, -2, 0 ],
+															"show_position": 1,
+															"bend": {
+																"offset": -1,
+																"end_offset": 1,
+																"size": 2,
+																"detail": 1,
+																"inherit_bend": 1,
+																"part": "lower",
+																"axis": [ "x", "y", "z" ]
+															},
+															"shapes": [
+																{
+																	"type": "plane",
+																	"from": [ -1, -2, -0.5 ],
+																	"to": [ 1, 0, -0.5 ],
+																	"uv": [ 48, 2 ],
+																	"rotation": [ 0, 180, 0 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 150, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -1.2879, -2, -0.86713 ],
+																	"to": [ 0.7121, 0, -0.86713 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, -30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 210, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"texture_mirror": true,
+																	"3d": true
+																},
+																{
+																	"type": "plane",
+																	"from": [ -0.71186, -2, -0.86721 ],
+																	"to": [ 1.28814, 0, -0.86721 ],
+																	"uv": [ 56, 2 ],
+																	"rotation": [ 0, 30, 0 ],
+																	"scale": [ 0.86667, 1, 0.5 ],
+																	"3d": true
+																}
+															],
+															"parts": [
+																{
+																	"name": "back_droop_hair_0_2 (2)",
+																	"position": [ 0, -2, 0 ],
+																	"show_position": 1,
+																	"bend": {
+																		"offset": -1,
+																		"end_offset": 1,
+																		"size": 2,
+																		"detail": 1,
+																		"inherit_bend": 1,
+																		"part": "lower",
+																		"axis": [ "x", "y", "z" ]
+																	},
+																	"shapes": [
+																		{
+																			"type": "plane",
+																			"from": [ -1, -2, -0.5 ],
+																			"to": [ 1, 0, -0.5 ],
+																			"uv": [ 48, 4 ],
+																			"rotation": [ 0, 180, 0 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 150, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -1.2879, -2, -0.86713 ],
+																			"to": [ 0.7121, 0, -0.86713 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, -30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 210, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"texture_mirror": true,
+																			"3d": true
+																		},
+																		{
+																			"type": "plane",
+																			"from": [ -0.71186, -2, -0.86721 ],
+																			"to": [ 1.28814, 0, -0.86721 ],
+																			"uv": [ 56, 4 ],
+																			"rotation": [ 0, 30, 0 ],
+																			"scale": [ 0.86667, 1, 0.5 ],
+																			"3d": true
+																		}
+																	],
+																	"parts": [
+																		{
+																			"name": "back_droop_hair_0_3 (2)",
+																			"position": [ 0, -2, 0 ],
+																			"show_position": 1,
+																			"bend": {
+																				"offset": -1,
+																				"end_offset": 1,
+																				"size": 2,
+																				"detail": 1,
+																				"inherit_bend": 1,
+																				"part": "lower",
+																				"axis": [ "x", "y", "z" ]
+																			},
+																			"shapes": [
+																				{
+																					"type": "plane",
+																					"from": [ -1, -2, -0.5 ],
+																					"to": [ 1, 0, -0.5 ],
+																					"uv": [ 48, 6 ],
+																					"rotation": [ 0, 180, 0 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 150, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -1.2879, -2, -0.86713 ],
+																					"to": [ 0.7121, 0, -0.86713 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, -30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 210, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"texture_mirror": true,
+																					"3d": true
+																				},
+																				{
+																					"type": "plane",
+																					"from": [ -0.71186, -2, -0.86721 ],
+																					"to": [ 1.28814, 0, -0.86721 ],
+																					"uv": [ 56, 6 ],
+																					"rotation": [ 0, 30, 0 ],
+																					"scale": [ 0.86667, 1, 0.5 ],
+																					"3d": true
+																				}
+																			],
+																			"parts": [
+																				{
+																					"name": "back_droop_hair_0_4 (2)",
+																					"position": [ 0, -2, 0 ],
+																					"show_position": 1,
+																					"bend": {
+																						"offset": -1,
+																						"end_offset": 1,
+																						"size": 2,
+																						"detail": 1,
+																						"inherit_bend": 1,
+																						"part": "lower",
+																						"axis": [ "x", "y", "z" ]
+																					},
+																					"shapes": [
+																						{
+																							"type": "plane",
+																							"from": [ -1, -2, -0.5 ],
+																							"to": [ 1, 0, -0.5 ],
+																							"uv": [ 48, 8 ],
+																							"rotation": [ 0, 180, 0 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 150, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -1.2879, -2, -0.86713 ],
+																							"to": [ 0.7121, 0, -0.86713 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, -30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 210, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"texture_mirror": true,
+																							"3d": true
+																						},
+																						{
+																							"type": "plane",
+																							"from": [ -0.71186, -2, -0.86721 ],
+																							"to": [ 1.28814, 0, -0.86721 ],
+																							"uv": [ 56, 8 ],
+																							"rotation": [ 0, 30, 0 ],
+																							"scale": [ 0.86667, 1, 0.5 ],
+																							"3d": true
+																						}
+																					],
+																					"parts": [
+																						{
+																							"name": "back_droop_hair_0_5 (2)",
+																							"position": [ 0, -2, 0 ],
+																							"show_position": 1,
+																							"bend": {
+																								"offset": -1,
+																								"end_offset": 1,
+																								"size": 2,
+																								"detail": 1,
+																								"inherit_bend": 1,
+																								"part": "lower",
+																								"axis": [ "x", "y", "z" ]
+																							},
+																							"shapes": [
+																								{
+																									"type": "plane",
+																									"from": [ -1, -2, -0.5 ],
+																									"to": [ 1, 0, -0.5 ],
+																									"uv": [ 48, 10 ],
+																									"rotation": [ 0, 180, 0 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 150, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -1.2879, -2, -0.86713 ],
+																									"to": [ 0.7121, 0, -0.86713 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, -30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 210, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"texture_mirror": true,
+																									"3d": true
+																								},
+																								{
+																									"type": "plane",
+																									"from": [ -0.71186, -2, -0.86721 ],
+																									"to": [ 1.28814, 0, -0.86721 ],
+																									"uv": [ 56, 10 ],
+																									"rotation": [ 0, 30, 0 ],
+																									"scale": [ 0.86667, 1, 0.5 ],
+																									"3d": true
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
